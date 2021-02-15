@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/owl.carousel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="sub_header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-8 text-right align-self-center">An initiative to advance the career of job seekers during the COVID-19 pandemic</div>
+                <div class="col-4 text-left align-self-center">
+                    <div class="button">
+                        <span class="btn"> Visit Career Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="" class="site-name"><img src="image/logo.svg" alt="" class="light-logo"></a>
+        <nav>
+            <a href="job_seeker.html" class="link active">JOBS<span class="line"></span></a>
+            <a href="user_profile.html" class="link">RECRUITERS <span class="line"></span></a>
+            <a href="" class="link">COMPANIES<span class="line"></span></a>
+            <a href="login.html" class="link" data-toggle="tooltip" data-placement="top" title="Jobseeker Login">LOGIN <span class="line"></span></a>
+        </nav>
+        <div class="login">
+            <a href="" class="icon"><i class="far fa-bell"></i></a>
+            <span class="dropdown">
+                <span class="dropbtn">FOR EMPLOYERS</span>
+                <div class="dropdown-content">
+                    <a href="#">Employer Login</a>
+                    <a href="#">option</a>
+                    <a href="#">option</a>
+                </div>
+            </span>
+        </div>
+        <!-- <div class="btnm">
+            <div class="btnmenu">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+        </div> -->
+    </header>
+
+    <div class="slide_wrapper">
+        <div class="owl-carousel">
+            <img src="image/1.webp">
+            <img src="image/2.webp">
+            <img src="image/3.webp">
+        </div>
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                animateOut: 'fadeOut',
+                items:1,
+                loop:true,
+                margin:0,
+                autoplay:true,
+                autoplayTimeout:4000,
+                autoplayHoverPause:false
+            });
+            $('.play').on('click',function(){
+                owl.trigger('play.owl.autoplay',[1000])
+            })
+            $('.stop').on('click',function(){
+                owl.trigger('stop.owl.autoplay')
+            })
+        </script>
+    </div>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>कर्मठ अलीगढ की  ऑनलाइन  सेवाएँ</h1>
+                </div>
+            </div>
+            <div class="row top-margin-30">
+                <div class="col-md-6 col-lg-3">
+                    <a href="#" class="single-promo-section login text-center">
+                        <div class="single-promo-content">
+                            <img src="image/login.svg" alt="">
+                            <h6>Jobseeker Login</h6>
+                            <p>that helps your business show on top listings in Google</p>
+                        </div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="#" class="single-promo-section regist text-center">
+                        <div class="single-promo-content">
+                            <img src="image/user-register.svg" alt="">
+                            <h6>Jobseeker Registration</h6>
+                            <p>is a form of Internet marketing that involves the promotion of websites</p>
+                        </div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="#" class="single-promo-section comp-login text-center">
+                        <div class="single-promo-content">
+                            <img src="image/company-login.svg" alt="">
+                            <h6>Employer Login</h6>   
+                            <p>is a form of Internet marketing that involves the promotion of websites </p>
+                        </div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="#" class="single-promo-section comp-regist text-center">
+                        <div class="single-promo-content">
+                            <img src="image/company-regist.svg" alt="">
+                            <h6>Employer Registration</h6>
+                            <p>is one of the best ways to increase organic reach and gain Brand Awareness</p>            
+                        </div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>वेबसाइट अनावरण न्यूज़</h1>
+                </div>
+            </div>
+            <div class="row top-margin-30">
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="100%" max-height="480px" src="https://www.youtube.com/embed/anEM1VwYJMA" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <p style="text-align: justify;">अलीगढ़- ई-गवर्नेन्स के क्षेत्र में एक कदम आगे बढाते हुये जिलाधिकारी डा0 हृषिकेष भास्कर यषोद की सराहनीय पहल पर चरित्र एवं वारिसान प्रमाण पत्रों को निर्गत करने की सम्पूर्ण प्रक्रिया को कम्प्यूटरीकृत करते हुये ऑनलाइन कर दिया गया है। जिसके ऑनलाइन पोर्टल का उद्घाटन मण्डलायुक्त सुभाष चन्द शर्मा ने मंगलवार को कलेक्ट्रेट स्थित नवीन सभागार में किया।</p>
+                        <p style="text-align: justify;">वर्तमान में चरित्र एवं वारिसान प्रमाण पत्र मैनुअल प्रक्रिया के तहत जारी किये जा रहे हैं। इस प्रक्रिया में आवेदकों को काफी कठिनाईयों का सामना करना पडता था। आवेदकों को दोनो प्रमाण पत्रों हेतु अपना आवेदन जिलाधिकारी कार्यालय में देना होता था। जहां से आवेदन पत्र जांच के लिये सम्बन्धित थानों/तहसीलों में भेजे जाते थे। जिसकी जांच आख्या आने में काफी समय लगता था तथा आवेदको को दफ्तरों को चक्कर काटने पडते थे।</p>
+                        <p class="minimize" style="text-align: justify;">उपरोक्त कठिनाईयों एवं इस प्रक्रिया को पूर्ण रूप से पारदर्शी बनाने के लिये जिलाधिकारी के निर्देशन में ई-डिस्ट्रिक्ट मैनेजर, मनोज राजपूत की देख-रेख में ऑनलाइन पोर्टल aligarhsushasan.in का निर्माण लखनऊ स्थित साफ्टवेयर कम्पनी क्लाउड सेक्ट सोल्यूशन्स ने किया है। इस प्रक्रिया के तहत आवेदक यदि इन्टरनेट का जानकार है तो वेबसाइट पर अपने मोबाइल नम्बर के माध्यम से स्वयं को रजिस्टर्ड कर चरित्र अथवा वारिसान प्रमाण पत्र के लिये आवेदन कर सकता है। 
+                            <span class="more">... </span>
+                            <a class="more">आगे पढ़ें</a>
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <p>
+                            <span class="more-detail">साथ ही इस सुविधा का लाभ जनमानस को उनके निकट स्थान पर ही दिया जा सके, इसके लिये लोकवाणी/जनसेवा केन्द्रों को जिलाधिकारी कार्यालय से आई0डी0 पासवर्ड जारी किये जायेगें ताकि आवेदक अपने नजदीकी जनसेवा/लोकवाणी केन्द्र से आवेदक अपना आवेदन कर सकें। इस ऑनलाइन प्रक्रिया में चरित्र तथा वारिसान प्रमाण-पत्रों हेतु समस्त जांच आख्यायें थाना, एल0आई0यू0,एस0एस0पी0 कार्यालय तथा तहसील स्तर से ऑनलाइन ही लगाई जायेगी। जांच आख्या प्राप्त होने के बाद जिलाधिकारी कार्यालय में अपर जिलाधिकारी (प्रशासन) तथा ई-डिस्ट्रिक्ट मैनेजर से एप्रूव होने के पश्चात ही जिलाधिकारी तथा प्रभारी अधिकारी (प्रमाण-पत्र) के स्तर से डिजिटली हस्ताक्षरित प्रमाण पत्र जारी हो जायेगा। आवेदनकर्ता ने जहां से आवेदन किया है वही से अपना प्रमाण पत्र प्राप्त कर सकता है।       
+                                <br>साथ ही इस सुविधा का लाभ जनमानस को उनके निकट स्थान पर ही दिया जा सके, इसके लिये लोकवाणी/जनसेवा केन्द्रों को जिलाधिकारी कार्यालय से आई0डी0 पासवर्ड जारी किये जायेगें ताकि आवेदक अपने नजदीकी जनसेवा/लोकवाणी केन्द्र से आवेदक अपना आवेदन कर सकें। इस ऑनलाइन प्रक्रिया में चरित्र तथा वारिसान प्रमाण-पत्रों हेतु समस्त जांच आख्यायें थाना, एल0आई0यू0, एस0एस0पी0 कार्यालय तथा तहसील स्तर से ऑनलाइन ही लगाई जायेगी। जांच आख्या प्राप्त होने के बाद जिलाधिकारी कार्यालय में अपर जिलाधिकारी (प्रशासन) तथा ई-डिस्ट्रिक्ट मैनेजर से एप्रूव होने के पश्चात ही जिलाधिकारी तथा प्रभारी अधिकारी (प्रमाण-पत्र) के स्तर से डिजिटली हस्ताक्षरित प्रमाण पत्र जारी हो जायेगा। आवेदनकर्ता ने जहां से आवेदन किया है वही से अपना प्रमाण पत्र प्राप्त कर सकता है।<br>
+                                <br>इस अवसर पर वरिष्ठ पुलिस अधीक्षक ने कहा कि यह एक सराहनीय पहल है तथा इस पूरी प्रक्रिया में आवेदक को दफ्तरों के चक्कर नही लगाने पडेंगे तथा इससे प्रमाण-पत्रों को जारी करने की प्रक्रिया में तेजी आयेगी। जिलाधिकारी डा0 हृषिकेष भास्कर यशोद ने बताया कि उ0प्र0 में चरित्र एवं वारिसान प्रमाण पत्र कही पर ऑनलाइन जारी नही होते हैं। अलीगढ़ प्रदेश का पहला ऐसा जनपद है जहां पर चरित्र एवं वारिसान प्रमाण पत्रों को ऑनलाइन डिजिटली हस्ताक्षरित जारी किया जायेगा। यह प्रक्रिया पूर्ण रूप से पारदर्षी है तथा इसमें आवेदको को किसी भी प्रकार की समस्या का सामना नही करना पडेगा। उन्होने कहा कि एस0एस0पी0, अपर जिलाधिकारी (प्र0) तथा ई-डिस्ट्रिक्ट मैनेजर के प्रयासो से यह प्रोजेक्ट पूरा हो पाया है तथा इस प्रक्रिया में भविष्य में और भी सुविधायें जैसे हैसियत प्रमाण पत्र, शस्त्र लाइसेन्स हेतु आवेदन, नवीनीकरण आदि जोड़ी जायेगी। डिस्ट्रिक्ट ई-गवर्नेन्स सोसायटी के तहत लाये गये इस ऑनलाइन पोर्टल की देख-रेख भविष्य में ई-डिस्ट्रिक्ट मैनेजर द्वारा की जायेगी।<br>
+                                इस उद्घाटन कार्यक्रम में मुख्य अतिथि के रूप में आमंत्रित सुभाष चन्द शर्मा मण्डलायुक्त ने कहा कि यह एक अत्यन्त सराहनीय पहल है। इससे कई प्रकार की कठिनाईयों तथा भ्रष्टाचार पर अंकुश लगेगा। इस प्रक्रिया को सफल बनाने के लिये उन्होने बताया कि सभी तहसील एवं थानों पर कम्प्यूटर हार्डवेयर तथा इण्टरनेट की सुविधा होना जरुरी है। इस पोर्टल को लांन्च करने के पश्चात मण्डलायुक्त ने जिलाधिकारी, वरिष्ठ पुलिस अधीक्षक, अपर जिलाधिकारी (प्रशासन) ई-डिस्ट्रिक्ट मैनेजर को बधाई दी।<br>
+                                इस मौके पर कार्यक्रम में नगर आयुक्त सन्तोष कुमार शर्मा, अपर जिलाधिकारी (नगर) एस0बी0सिंह, अपर जिलाधिकारी (प्रशासन) आर0एन0 शर्मा, अपर जिलाधिकारी (वि0/रा0) बच्चू सिंह, पुलिस अधीक्षक (नगर) अतुल कुमार श्रीवास्तव, पुलिस अधीक्षक (ग्रामीण) डा0 यशवीर सिंह, उपजिलाधिकारी कोल पंकज कुमार वर्मा, उपजिलाधिकारी इगलास ललित कुमार, उपजिलाधिकारी अतरौली शिवकुमार, उपजिलाधिकारी खैर विनीत कुमार उपाध्याय, पी0डी0डी0आर0डी0ए0 सचिन, ई-डिस्ट्रिक्ट मैनेजर मनोज राजपूत, पुलिस उपाधीक्षक प्रज्ञान, समस्त तहसीलदार, लोकवाणी व जनसेवा केन्द्र संचालक उपस्थित रहे। 
+                            </span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h4>Copyright 2020 Implemented by DM Office Aligarh. All rights reserved.</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script/index.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+</body>
+</html>
