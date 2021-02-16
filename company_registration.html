@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<script src="script/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col">
+                    <div class="card register">
+                        <form action="#">
+                            <h3>Company Registration</h3>
+                            <div class="row top-margin-40">
+                                <div class="col-md-6">
+                                    <div class="inputBox">
+                                        <div class="inputText">Company Name</div>
+                                        <input type="text" name="company_name" class="input" id="company_name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputBox">
+                                        <div class="inputText">Contact Person's Name</div>
+                                        <input type="text" name="contact_person_name" class="input" id="contact_person_name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="inputBox">
+                                        <div class="inputText">Address Line 1</div>
+                                        <input type="text" name="Address_1" class="input" id="Address_1" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="inputBox">
+                                        <div class="inputText">Address Line 2</div>
+                                        <input type="text" name="Address_2" class="input" id="Address_2">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">City</div>
+                                        <input type="text" name="city" class="input" id="city" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">State</div>
+                                        <input type="text" name="state" class="input" id="state" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">Pin Code</div>
+                                        <input type="text" name="pincode" class="input" id="pincode" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">Mobile Number</div>
+                                        <input type="text" name="mobile_number" class="input" id="mobile_number" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">Email Address</div>
+                                        <input type="text" name="email" class="input" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="inputBox">
+                                        <div class="inputText">GSTIN</div>
+                                        <input type="text" name="gstin" class="input" id="gstin" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputBox">
+                                        <div class="inputText">Create Password</div>
+                                        <input type="password" name="create_password" class="input" id="create_password" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputBox">
+                                        <div class="inputText">Confirm Password</div>
+                                        <input type="password" name="confirm_password" class="input" id="confirm_password" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="agree_terms" required>
+                                        <label class="form-check-label" for="agree_terms">Agree the term and condition</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center top-margin-20">
+                                <div class="col-md-4 align-self-center">
+                                    <div class="inputBox">
+                                        <input type="submit"  class="btn-apply" value="REGISTER">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="signup-link">Already registered ?  <a href="login.html"><strong>LOGIN NOW</strong></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Copyright (C) 2020. All right reserved.</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(".input").focus(function(){
+            $(this).parent().addClass("focus");
+                 }).blur(function(){
+                     if($(this).val() ===''){
+                     $(this).parent().removeClass("focus");
+                 }
+         });
+
+
+         
+
+        var filledInputs = $('#mobile').on('click',function() {
+            return !!this.value;
+            }).length;
+            console.log(filledInputs);
+    </script>
+    <script src="script/bootstrap.min.js"></script>
+</body>
+</html>

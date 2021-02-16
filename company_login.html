@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="script/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="image/logo.svg" class="logo" alt="">
+            <h3>Company Sign In</h3>
+            <form action="index.html">
+                <div class="inputBox">
+                    <div class="inputText">USERNAME</div>
+                    <input type="text" name="username" class="input" id="username" required>
+                </div>
+                <div class="inputBox">
+                    <div class="inputText">PASSWORD</div>
+                    <input type="password" name="password" class="input" id="password" required>
+                </div>
+                <a href="forget.html" class="forget">Forget Password ?</a>
+                <div class="inputBox">
+                    <input type="submit"  class="btn-apply" value="LOGIN">
+                </div>
+            </form>
+            <div class="signup-link">Are you a new client ? <a href="company_registration.html"><strong>Register Now</strong></a></div>
+        </div>
+        <div class="footer">Copyright (C) 2020. All right reserved.</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(".input").focus(function(){
+            $(this).parent().addClass("focus");
+                 }).blur(function(){
+                     if($(this).val() ===''){
+                     $(this).parent().removeClass("focus");
+                 }
+         });
+
+
+
+ </script>
+</body>
+</html>

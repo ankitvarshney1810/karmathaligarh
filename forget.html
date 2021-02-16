@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="script/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="image/logo.svg" class="logo" alt="">
+            <form action="reset.html">
+                <h3>Forget Password</h3>
+                <div class="inputBox">
+                    <div class="inputText">Enter Mobile Number</div>
+                    <input type="text" name="mobile_number" class="input" id="mobile" required>
+                </div>
+                <div class="inputBox show">
+                    <div class="inputText">Enter OTP</div>
+                    <input type="text" name="otp" class="input" id="otp" required>
+                    <a href="#" class="resend">RESEND</a>
+                </div>
+                <div class="inputBox">
+                    <input type="submit"  class="btn-apply" value="CONTINUE">
+                </div>
+
+            </form>
+        </div>
+        <div class="footer">Copyright (C) 2019. All right reserved.</div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(".input").focus(function(){
+            $(this).parent().addClass("focus");
+                 }).blur(function(){
+                     if($(this).val() ===''){
+                     $(this).parent().removeClass("focus");
+                 }
+         });
+
+
+         
+
+    function textLength(value){
+    var maxLength = 9;
+    if(value.length > maxLength) return false;
+    return true;
+    }
+    var oldValue = '';
+    var alert = document.getElementById('alert');
+    document.getElementById('mobile').onkeyup = function(){
+         if(!textLength(this.value))
+         {
+             //this.value = oldValue;
+             //alert.innerHTML = 'Text is too long!'
+             $(".show").css('display','block');
+         }
+         else{
+            $(".show").css('display','none');
+         } 
+    }
+ </script>
+</body>
+</html>

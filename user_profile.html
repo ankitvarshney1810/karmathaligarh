@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/the-datepicker.css">
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/the-datepicker.js"></script>
+    <title>Search Jobs</title>
+</head>
+<body>
+    <div class="sub_header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-8 text-right align-self-center">An initiative to advance the career of job seekers during the COVID-19 pandemic</div>
+                <div class="col-4 text-left align-self-center">
+                    <div class="button">
+                        <span class="btn"> Visit Career Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="" class="site-name"><img src="image/logo.svg" alt="" class="light-logo"></a>
+        <nav>
+            <a href="job_seeker.html" class="link">SEARCH JOBS<span class="line"></span></a>
+            <a href="user_profile.html" class="link active">PROFILE <span class="line"></span></a>
+            <a href="job_applied.html" class="link">JOB APPLIED<span class="line"></span></a>
+            <a href="login.html" class="link">LOGOUT <span class="line"></span></a>
+        </nav>
+        <div class="login">
+            <a href=""><i class="far fa-bell"></i></a>
+            <a href="">Ankit Varshney</a>
+        </div>
+        <!-- <div class="btnm">
+            <div class="btnmenu">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+        </div> -->
+    </header>
+
+    <section class="user-profile-summary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3 text-center">
+                                <div class="profile-pic">
+                                    <div class="pic-box">
+                                        <img src="image/pic.jpg" alt="">
+                                    </div>
+                                    <span class="pic-edit"><i class="fas fa-camera"></i></span>
+                                    <div class="model" id="pic-edit-box">
+                                        <div class="box">
+                                            <span class="close"><i class="fas fa-times"></i></span>
+                                            <a href="" class="delete-photo">Delete Photo</a>
+                                            <h3>Profile Photo Upload</h3>
+                                            <p>Profile with photo has 50% higher chances of getting noticed by recruiters.</p>
+                                            <div class="top-margin-30" id="profile">
+                                                <div class="dashes"></div>
+                                                <label>Click to browse image here</label>
+                                            </div> 
+                                            <input type="file" name="upload" id="file">
+                                            <button class="btn btn-apply">CHANGE PHOTO</button><br>
+                                            <span class="top-margin-5 d-block"><small>Supported file format: png, jpg, jpeg, gif - upto 2MB</small></span>
+                                            <p class="top-margin-20">By uploading your photograph, you certify that naukri.com has the right to display this photograph to the recruiters and that the uploaded file does not violate our <a href=""> Terms of services.</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-9 align-self-center">
+                                <div class="user-name">
+                                    <span class="name">Ankit Varshney</span>
+                                    <span class="edit-basic-detail"><i class="fas fa-edit"></i></span>
+                                </div>
+                                <div class="job-profile top-margin-5">
+                                    <span>Java Developer at TPS Software Developer</span>
+                                </div>
+                                <div class="current-job-description top-margin-10">
+                                    <div class="item">
+                                        <span class="item-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                        <span class="item-name">Aligarh, INDIA</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="item-icon"><i class="far fa-calendar"></i></span>
+                                        <span class="item-name">5 Year(s) 5 Month(s)</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="item-icon"><i class="fas fa-wallet"></i></span>
+                                        <span class="item-name">INR 7 Lakh(s) 20 Thousand</span>
+                                    </div>
+                                </div>
+                                <div class="model" id="basic-info-user">
+                                    <div class="box">
+                                        <span class="close"><i class="fas fa-times"></i></span>
+                                        <h3>Basic Detail</h3>
+                                        <form action="" class="top-margin-40" autocomplete="off">
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-md-4">
+                                                    <div class="inputBox">
+                                                        <div class="inputText">Name</div>
+                                                        <input type="text" name="name" class="input" id="name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inputBox">
+                                                        <div class="inputText">Email Address</div>
+                                                        <input type="email" name="email" class="input" id="email" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-md-4">
+                                                    <div class="inputBox">
+                                                        <div class="inputText">Contact Number</div>
+                                                        <input type="text" name="number" class="input" id="contact_number" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="inputBox">
+                                                        <div class="inputText">Location</div>
+                                                        <input type="text" name="location" class="input" id="location" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-md-center top-margin-10">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-3">
+                                                    <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="submit" value="SAVE" class="btn btn-apply">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row top-margin-20">
+                <div class="col">
+                    <div class="update">Profile Last Updated On - <strong>tomorrow</strong> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 top-margin-20">
+                    <div class="card">
+                        <h5>Quick Links</h5>
+                    </div>
+                </div>
+                <div class="col-md-8 top-margin-20">
+                    <div class="card personal_detail">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Personal Details</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <i class="fas fa-edit personal-detail-edit-icon"></i>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col-md-5">
+                                <div class="title">Date of Birth</div>
+                                <div class="title-content">12 Jan 2000</div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="title">Permanent Address</div>
+                                <div class="title-content">17/189 A-7, Laxmi Nagar, Mathura Road, Sasni Gate</div>
+                            </div>
+                        </div>
+                        <div class="row top-margin-20">
+                            <div class="col-md-5">
+                                <div class="title">Gender</div>
+                                <div class="title-content">Male</div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="title">Area Pin Code</div>
+                                <div class="title-content">202001</div>
+                            </div>
+                        </div>
+                        <div class="row top-margin-20">
+                            <div class="col-md-5">
+                                <div class="title">Marital Status</div>
+                                <div class="title-content">Single/Unmarried</div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="title">Hometown</div>
+                                <div class="title-content">Aligarh</div>
+                            </div>
+                        </div>
+                        <div class="row top-margin-20">
+                            <div class="col-md-5">
+                                <div class="title">Category</div>
+                                <div class="title-content">General</div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="title">Differently Abled</div>
+                                <div class="title-content">None</div>
+                            </div>
+                        </div>
+                        <div class="model" id="personal-detail-user">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Basic Detail</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Date of Birth</div>
+                                                <input type="text" name="departure" id="datepick" class="input">
+                                                <span class="calender-icon"><i class="far fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <select name="" id="" class="input">
+                                                    <option value="">Gender</option>
+                                                    <option value="">Male</option>
+                                                    <option value="">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-10">
+                                            <div class="inputBox">
+                                                <div class="inputText">Permanent Address</div>
+                                                <input type="text" name="address" class="input" id="address" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Hometown</div>
+                                                <input type="text" name="hometown" class="input" id="hometown" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Pincode</div>
+                                                <input type="text" name="pincode" class="input" id="pincode" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <select name="" id="" class="input">
+                                                    <option value="">Marital Status</option>
+                                                    <option value="">Married</option>
+                                                    <option value="">Unmarried</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <select name="" id="" class="input">
+                                                    <option value="">Category</option>
+                                                    <option value="">General</option>
+                                                    <option value="">OBC</option>
+                                                    <option value="">SC</option>
+                                                    <option value="">ST</option>
+                                                    <option value="">Others</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card language top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Languages</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button class="btn btn-apply add-new-language">Add New</button>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Languages</th>
+                                        <th scope="col">Proficiency</th>
+                                        <th scope="col">Read</th>
+                                        <th scope="col">Write</th>
+                                        <th scope="col">Speak</th>
+                                        <th scope="col"> </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Hindi</td>
+                                        <td>Expert</td>
+                                        <td><span class="true"></span></td>
+                                        <td><span class="true"></span></td>
+                                        <td><span class="true"></span></td>
+                                        <td><i class="fas fa-edit edit-icon language-edit-icon"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <td>English</td>
+                                        <td>Proficient</td>
+                                        <td><span class="true"></span></td>
+                                        <td><span class="true"></span></td>
+                                        <td><span class="false"></span></td>
+                                        <td><i class="fas fa-edit edit-icon language-edit-icon"></i></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="model" id="add-language">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Add Language</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-4">
+                                            <div class="inputBox">
+                                                <div class="inputText">Language</div>
+                                                <input type="text" name="language" id="language" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Select Language Proficiency</div>
+                                                <select name="" id="" class="input">
+                                                    <option value=""></option>
+                                                    <option value="">Expert</option>
+                                                    <option value="">Proficient</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-3">
+                                            <div class="inputBox">
+                                                <div class="inputText">Read</div>
+                                                <select name="" id="" class="input">
+                                                    <option value=""></option>
+                                                    <option value="">Yes</option>
+                                                    <option value="">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="inputBox">
+                                                <div class="inputText">Write</div>
+                                                <select name="" id="" class="input">
+                                                    <option value=""></option>
+                                                    <option value="">Yes</option>
+                                                    <option value="">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="inputBox">
+                                                <div class="inputText">Speak</div>
+                                                <select name="" id="" class="input">
+                                                    <option value=""></option>
+                                                    <option value="">Yes</option>
+                                                    <option value="">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="model" id="edit-language">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Edit Language</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-4">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Language</div>
+                                                <input type="text" name="language" id="language" value="Hindi" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Select Language Proficiency</div>
+                                                <select name="proficiency" id="proficiency" class="input">
+                                                    <option value=""></option>
+                                                    <option value="expert" selected>Expert</option>
+                                                    <option value="proficient">Proficient</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-3">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Read</div>
+                                                <select name="read" id="read" class="input">
+                                                    <option value=""></option>
+                                                    <option value="yes" selected>Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Write</div>
+                                                <select name="write" id="write" class="input">
+                                                    <option value=""></option>
+                                                    <option value="yes" selected>Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Speak</div>
+                                                <select name="speak" id="speak" class="input">
+                                                    <option value=""></option>
+                                                    <option value="yes" selected>Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="DELETE" class="btn btn-light">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card work_experience top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Work Experience</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button class="btn btn-apply add-work-experience">Add New</button>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Company Name</th>
+                                        <th scope="col">Job Title</th>
+                                        <th scope="col">working From</th>
+                                        <th scope="col">worked Till</th>
+                                        <th scope="col">Salary</th>
+                                        <th scope="col">Leave Reason</th>
+                                        <th scope="col"> </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>TPS</td>
+                                        <td>Java Developer </td>
+                                        <td>20-2-2015</td>
+                                        <td>Present</td>
+                                        <td>60000/- Month</td>
+                                        <td>Hike</td>
+                                        <td><i class="fas fa-edit edit-icon edit-work-experience"></i></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="model" id="add-work-experience">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Add Work Experience</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Company Name</div>
+                                                <input type="text" name="company_name" id="company_name" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Job Title</div>
+                                                <input type="text" name="job_title" id="job_title" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-10 text-left">
+                                            <span style="color:#707070;">Is this your current company?</span>
+                                            <div class="row top-margin-10">
+                                                <div class="col-2 align-self-center text-left">
+                                                    <input type="radio" name="current_company" id="current_company_yes" class="radio-icon">
+                                                    <label for="current_company_yes">yes</label>
+                                                </div>
+                                                <div class="col-2 align-self-center text-left">
+                                                    <input type="radio" name="current_company" id="current_company_no" class="radio-icon">
+                                                    <label for="current_company_no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-30">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">working From</div>
+                                                <input type="text" name="working_from" id="datepick_working_from" class="input">
+                                                <span class="calender-icon"><i class="far fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">working Till</div>
+                                                <input type="text" name="working_to" id="datepick_working_to" class="input">
+                                                <span class="calender-icon"><i class="far fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-30">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Salary</div>
+                                                <input type="text" name="salary" id="salary" class="input" required>
+                                                <select name="" id="" class="input salary_type">
+                                                    <option value="">/ Month</option>
+                                                    <option value="">/ year</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Leave Reason</div>
+                                                <input type="text" name="leave_reason" id="leave_reason" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="model" id="edit-work-experience">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Edit Work Experience</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Company Name</div>
+                                                <input type="text" name="company_name" id="company_name" value="TPS" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Job Title</div>
+                                                <input type="text" name="job_title" id="job_title" value="Java Developer " class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-10 text-left">
+                                            <span style="color:#707070;">Is this your current company?</span>
+                                            <div class="row top-margin-10">
+                                                <div class="col-2 align-self-center text-left">
+                                                    <input type="radio" name="current_company" id="current_company_yes" class="radio-icon">
+                                                    <label for="current_company_yes">yes</label>
+                                                </div>
+                                                <div class="col-2 align-self-center text-left">
+                                                    <input type="radio" name="current_company" id="current_company_no" class="radio-icon" checked>
+                                                    <label for="current_company_no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-30">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">working From</div>
+                                                <input type="text" name="working_from" id="datepick_working_from" value="2 / 9 / 2019" class="input">
+                                                <span class="calender-icon"><i class="far fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">working Till</div>
+                                                <input type="text" name="working_to" id="datepick_working_to" value="2 / 9 / 2020" class="input">
+                                                <span class="calender-icon"><i class="far fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-30">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Salary</div>
+                                                <input type="text" name="salary" id="salary" class="input" value="60000" required>
+                                                <select name="" id="" class="input salary_type">
+                                                    <option value="">/ Month</option>
+                                                    <option value="">/ year</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Leave Reason</div>
+                                                <input type="text" name="leave_reason" id="leave_reason" class="input" value="Hike" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="DELETE" class="btn btn-light">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card education top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Education</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button class="btn btn-apply add-education">Add New</button>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Name of Class/diploma/degree</th>
+                                        <th scope="col">Name of Institute/School/Board/University</th>
+                                        <th scope="col">Language Medium</th>
+                                        <th scope="col">Passing Year</th>
+                                        <th scope="col"> </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>B.Sc.</td>
+                                        <td>AMU</td>
+                                        <td>English</td>
+                                        <td>2017</td>
+                                        <td><i class="fas fa-edit edit-icon edit-education"></i></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="model" id="add-education">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Add Education</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Name of Class/diploma/degree</div>
+                                                <input type="text" name="name_class" id="name_class" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Name of  Institute/School/Board</div>
+                                                <input type="text" name="name_board" id="name_board" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Language Medium</div>
+                                                <input type="text" name="language_medium" id="language_medium" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Passing Year</div>
+                                                <input type="text" name="passing_year" id="passing_year" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="model" id="edit-education">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Edit Education</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Name of Class/diploma/degree</div>
+                                                <input type="text" name="name_class" id="name_class" class="input" value="B.Sc." required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Name of  Institute/School/Board</div>
+                                                <input type="text" name="name_board" id="name_board" class="input" value="AMU" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Language Medium</div>
+                                                <input type="text" name="language_medium" id="language_medium" class="input" value="English" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Passing Year</div>
+                                                <input type="text" name="passing_year" id="passing_year" class="input" value="2017" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="Delete" class="btn btn-light">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card skill top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Skills</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button class="btn btn-apply add-skill">Add New</button>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Skills</th>
+                                        <th scope="col">Version</th>
+                                        <th scope="col">Experience</th>
+                                        <th scope="col"> </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Java</td>
+                                        <td>4.0</td>
+                                        <td>4 years</td>
+                                        <td><i class="fas fa-edit edit-icon edit-skill"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <td>Html</td>
+                                        <td>5.0</td>
+                                        <td>3 years</td>
+                                        <td><i class="fas fa-edit edit-icon edit-skill"></i></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="model" id="add-skill">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Add Skill</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Skills</div>
+                                                <input type="text" name="skill" id="skill" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Version</div>
+                                                <input type="text" name="version" id="version" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Experience (In years)</div>
+                                                <input type="text" name="experience" id="experience" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="model" id="edit-skill">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Edit Skill</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Skills</div>
+                                                <input type="text" name="skill" id="skill" class="input" value="Java" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Version</div>
+                                                <input type="text" name="version" id="version" class="input" value="4.0" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Experience (In years)</div>
+                                                <input type="text" name="experience" id="experience" class="input" value="4 years" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card family top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col-10 text-left">
+                                <h5>Family</h5>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button class="btn btn-apply add-family-member">Add New</button>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Relation</th>
+                                        <th scope="col">Age</th>
+                                        <th scope="col">Occupation</th>
+                                        <th scope="col"> </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Gagan Varshney</td>
+                                        <td>Brother</td>
+                                        <td>21</td>
+                                        <td>Student</td>
+                                        <td><i class="fas fa-edit edit-icon edit-family-member"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <td>Gagan Varshney</td>
+                                        <td>Brother</td>
+                                        <td>21</td>
+                                        <td>Student</td>
+                                        <td><i class="fas fa-edit edit-icon edit-family-member"></i></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="model" id="add-family-member">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Add Family Member</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Name</div>
+                                                <input type="text" name="name_family_member" id="name_family_member" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Relation</div>
+                                                <input type="text" name="relation" id="relation" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Age</div>
+                                                <input type="text" name="age-family-member" id="age-family-member" class="input" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <div class="inputText">Occupation</div>
+                                                <input type="text" name="occupation" id="occupation" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="model" id="edit-family-member">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Edit Family Member</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Name</div>
+                                                <input type="text" name="name_family_member" id="name_family_member" class="input" value="Gagan Varshney" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Relation</div>
+                                                <input type="text" name="relation" id="relation" class="input" value="Brother" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Age</div>
+                                                <input type="text" name="age-family-member" id="age-family-member" class="input" value="19" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="inputBox focus">
+                                                <div class="inputText">Occupation</div>
+                                                <input type="text" name="occupation" id="occupation" class="input" value="Student" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="DELETE" class="btn btn-light">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card resume top-margin-20">
+                        <div class="row no-gutters">
+                            <div class="col text-left">
+                                <h5>Attach Resume</h5>
+                                <span class="description">Resume is the most important document recruiters look for. Recruiters generally do not look at profiles without resumes.</span>
+                            </div>
+                        </div>
+                        <div class="row top-margin-30">
+                            <div class="col-10 text-left">
+                                <span class="title-content"><strong>Resume_xyz.pdf</strong></span><span class="title"> - Uploaded On Jan 02, 2020</span>
+                            </div>
+                            <div class="col-2 text-right">
+                                <i class="fas fa-trash delete-icon"></i>
+                            </div>
+                        </div>
+                        <span class="border-bottom-light top-margin-20"></span>
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="resume-button">
+                                    <button class="btn btn-apply update-resume">UPDATE RESUME</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model" id="update-resume">
+                            <div class="box">
+                                <span class="close"><i class="fas fa-times"></i></span>
+                                <h3>Update Resume</h3>
+                                <form action="" class="top-margin-40" autocomplete="off">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-5">
+                                            <div class="inputBox">
+                                                <input type="file" name="resume" id="resume" class="input" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center top-margin-10">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3">
+                                            <input type="button" value="CANCEL" class="btn btn-light cancel">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="submit" value="SAVE" class="btn btn-apply">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    All rights reserved @ 2020 XYZ (India) Ltd.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/index.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+</body>
+</html>

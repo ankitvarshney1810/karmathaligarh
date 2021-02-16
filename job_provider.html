@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<script src="script/jquery-3.3.1.min.js"></script>
+    <title>Search Jobs</title>
+</head>
+<body>
+    <div class="sub_header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-8 text-right align-self-center">An initiative to advance the career of job seekers during the COVID-19 pandemic</div>
+                <div class="col-4 text-left align-self-center">
+                    <div class="button">
+                        <span class="btn"> Visit Career Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="" class="site-name"><img src="image/logo.svg" alt="" class="light-logo"></a>
+        <nav>
+            <a href="job_provider.html" class="link active">CREATE JOBS<span class="line"></span></a>
+            <a href="#" class="link">PROFILE <span class="line"></span></a>
+            <a href="company_login.html" class="link">LOGOUT <span class="line"></span></a>
+        </nav>
+        <div class="login">
+            <a href=""><i class="far fa-bell"></i></a>
+            <a href="">Ankit Varshney</a>
+        </div>
+        <!-- <div class="btnm">
+            <div class="btnmenu">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+        </div> -->
+    </header>
+
+    <section class="search_box">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span class="create_job"><button class="btn btn-apply">CREATE JOBS</button></span>
+                </div>
+            </div>
+            <div class="model" id="create_job">
+                <div class="big-box">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h3>Create Job</h3>
+                    <form action="" class="top-margin-40" autocomplete="off">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">Job Title</div>
+                                    <input type="text" name="job_title" id="job_title" class="input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">salary</div>
+                                    <input type="text" name="salary" id="salary" class="input">
+                                    <select name="" id="" class="input salary_type">
+                                        <option value="">/ Month</option>
+                                        <option value="">/ year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <select name="" id="" class="input">
+                                        <option value="">Job Type</option>
+                                        <option value="">Partime</option>
+                                        <option value="">Fulltime</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">Skills Required</div>
+                                    <input type="text" name="skill_required" class="input" id="skill_required" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">Contact Info</div>
+                                    <input type="text" name="contact_info" class="input" id="contact_info" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">Number of Vacancy</div>
+                                    <input type="text" name="number_of_vacancy" class="input" id="number_of_vacancy" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-9">
+                                <div class="inputBox">
+                                    <div class="inputText">Description Of Job</div>
+                                    <input type="text" name="description_job" class="input" id="description_job" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-9">
+                                <div class="inputBox">
+                                    <div class="inputText">Address</div>
+                                    <input type="text" name="address" class="input" id="address" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">City</div>
+                                    <input type="text" name="city" class="input" id="city" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">State</div>
+                                    <input type="text" name="state" class="input" id="state" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inputBox">
+                                    <div class="inputText">Pincode</div>
+                                    <input type="text" name="pincode" class="input" id="pincode" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center top-margin-10">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-3">
+                                <input type="button" value="CANCEL" class="btn btn-light cancel">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="submit" value="SAVE" class="btn btn-apply">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-listing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                    <div class="card top-margin-20">
+                        <div class="job-heading">Looking for Website Developer with 3yr experience... Urgent re...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="far fa-calendar"></i></div>
+                                    <div class="col-6">0-0yrs</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="col-6">Location</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discription top-margin-10">Job description along with requirement goes here...</div>
+                        <div class="row top-margin-5">
+                            <div class="col-4"><strong>Skills Required</strong></div>
+                            <div class="col-8">skill1, skill2, skill1, skill2, skill1, skill2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    All rights reserved @ 2020 XYZ (India) Ltd.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(".input").focus(function(){
+            $(this).parent().addClass("focus");
+                }).blur(function(){
+                    if($(this).val() ===''){
+                    $(this).parent().removeClass("focus");
+                }
+        });
+    </script>
+
+    
+    <script src="script/index.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+</body>
+</html>
